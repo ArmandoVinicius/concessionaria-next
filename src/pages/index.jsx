@@ -1,7 +1,20 @@
+import styled from "styled-components";
+
 const Home = () => (
-  <div className="container mx-auto flex h-screen">
-    <h1 className="text-3xl text-center m-auto font-bold">Hello World!</h1>
-  </div>
+  <Container>
+    <Text>Hello World!</Text>
+  </Container>
 );
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+const Text = styled.h1`
+  font-size: 55px;
+`;
 
 export default Home;
