@@ -16,9 +16,9 @@
 
 TODO
 
-- [] Base
-- [] API Connect
-- [] Login
-- [] Register
-- [] Fetch Data
-- [] Visual
+- [ ] Base
+- [ ] API Connect
+- [ ] Login
+- [ ] Register
+- [ ] Fetch Data
+- [ ] Visual
