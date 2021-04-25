@@ -1,6 +1,7 @@
 import Router from "next/router";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
+import NavBar from "../components/NavBar";
 import "../styles/globals.scss";
 
 const App = ({ Component, pageProps }) => {
@@ -9,7 +10,10 @@ const App = ({ Component, pageProps }) => {
   Router.events.on("routeChangeError", () => NProgress.done());
 
   return (
-    <Component {...pageProps} />
+    <>
+      <NavBar />
+      <Component {...pageProps} />
+    </>
   );
 };
 

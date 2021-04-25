@@ -1,10 +1,10 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Description, Title } from "./style";
 
 const CarImage = ({ title, description }) => (
-  <Container>
-    <h2>{title}</h2>
-    <p>{description}</p>
+  <Container image="assets/carro.jpg">
+    <Title>{title}</Title>
+    <Description>{description}</Description>
   </Container>
 );
 
