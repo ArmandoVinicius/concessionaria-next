@@ -1,20 +1,12 @@
-import styled from "styled-components";
+import CarImage from "../components/CarImage";
+// import Carro from "../../public/assets/carro.jpg";
 
 const Home = () => (
-  <Container>
-    <Text>Hello World!</Text>
-  </Container>
+  <CarImage
+    title="Compre os melhores carros aqui"
+    description="Novos e seminovos"
+    image="assets/carro_branco.jpg"
+  />
 );
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
-
-const Text = styled.h1`
-  font-size: 55px;
-`;
 
 export default Home;
