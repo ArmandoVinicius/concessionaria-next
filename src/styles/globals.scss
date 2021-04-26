@@ -1,16 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
-  --grey: #A7A5A5;
-  --grey-white: #BDBDBD;
-  --grey-black: #818181;
-  --white: #FFFFFF;
   --black: #000000;
+  --grey: #a7a5a5;
+  --grey-white: #bdbdbd;
+  --grey-black: #818181;
+  --white: #ffffff;
+  --white-clear: #f2f2f2;
+  --text-primary: #808080;
+  --text-secundary: #a9a9a9;
+  --text-darker: #6a6a6a;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
