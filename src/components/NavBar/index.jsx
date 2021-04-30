@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+// import { GiHamburgerMenu } from "react-icons/gi";
+import Hamburger from "hamburger-react";
 import {
   Container, Section, Ul, Li, Button, Image,
 } from "./style";
@@ -9,13 +10,11 @@ const NavBar = () => {
 
   return (
     <Container>
+      <Image src="assets/logomarca.png" alt="Logo" />
+      <Button>
+        <Hamburger toggled={open} toggle={setOpen} />
+      </Button>
       <Section>
-        <Image src="assets/logomarca.png" alt="Logo" />
-      </Section>
-      <Section>
-        <Button onClick={() => setOpen(!open)}>
-          <GiHamburgerMenu />
-        </Button>
         <Ul display={open ? "grid" : "none"}>
           <Li>Home</Li>
           <Li>Sobre</Li>

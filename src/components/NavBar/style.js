@@ -5,23 +5,25 @@ export const Container = styled.section`
   justify-content: space-around;
   align-items: center;
   background-color: var(--grey);
-  height: 100px;
+  height: 75px;
 
   @media(max-width: 800px) {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     height: 100%;
+    padding: 20px;
   }
 `;
 
 export const Section = styled.div`
-  display: flex;
-
-  margin: 30px;
-
   @media(max-width: 800px) {
-    display: block;
+    display: flex;
+    width: 100%;
+    background: var(--grey); 
+    position: absolute;
+    top: 78px;
+    left: 0;
   }
 `;
 
@@ -42,15 +44,10 @@ export const Li = styled.li`
   font-weight: bold;
   color: var(--grey-white);
   padding: 10px;
-
-  &:hover {
-    border-bottom: 3px solid var(--black);
-  }
 `;
 
 export const Button = styled.button`
   cursor: pointer;
-  padding: 10px;
   background-color: transparent;
   border: none;
 
