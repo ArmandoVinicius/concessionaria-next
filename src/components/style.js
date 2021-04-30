@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Container = styled.section`
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 800px) {
+    margin: 10px;
+  }
+`;
+
 export const Title = styled.h1`
   font-size: ${(props) => props.fontSize || "1.5rem"};
   color: ${(props) => props.textColor || "var(--text-primary)"};
@@ -19,8 +29,11 @@ export const Text = styled.p`
 `;
 
 export const ContainerCards = styled.div`
-  max-width: 1080px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 10px 0;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `;
