@@ -1,22 +1,22 @@
 import { useState } from "react";
 
-import Link from "next/link";
+// import { GiHamburgerMenu } from "react-icons/gi";
+import Hamburger from "hamburger-react";
+import {
+  Container, Section, Ul, Li, Button, Image,
+} from "./style";
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Container, Section, Ul, Li, Button, Image } from "./style";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <Container>
+      <Image src="assets/logomarca.png" alt="Logo" />
+      <Button>
+        <Hamburger toggled={open} toggle={setOpen} />
+      </Button>
       <Section>
-        <Image src="assets/logomarca.png" alt="Logo" />
-      </Section>
-      <Section>
-        <Button onClick={() => setOpen(!open)}>
-          <GiHamburgerMenu />
-        </Button>
         <Ul display={open ? "grid" : "none"}>
           <Link href="/">
             <Li>Home</Li>
