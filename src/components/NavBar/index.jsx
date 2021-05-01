@@ -1,8 +1,9 @@
 import { useState } from "react";
+
+import Link from "next/link";
+
 import { GiHamburgerMenu } from "react-icons/gi";
-import {
-  Container, Section, Ul, Li, Button, Image,
-} from "./style";
+import { Container, Section, Ul, Li, Button, Image } from "./style";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -17,8 +18,12 @@ const NavBar = () => {
           <GiHamburgerMenu />
         </Button>
         <Ul display={open ? "grid" : "none"}>
-          <Li>Home</Li>
-          <Li>Sobre</Li>
+          <Link href="/">
+            <Li>Home</Li>
+          </Link>
+          <Link href="/about_us">
+            <Li>Sobre</Li>
+          </Link>
           <Li>Marcas</Li>
           <Li>Login</Li>
         </Ul>
