@@ -1,11 +1,10 @@
+import Link from "next/link";
 import { useState } from "react";
 
-// import { GiHamburgerMenu } from "react-icons/gi";
 import Hamburger from "hamburger-react";
 import {
   Container, Section, Ul, Li, Button, Image,
 } from "./style";
-
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
