@@ -26,6 +26,7 @@ export const Text = styled.p`
   margin-top: ${(props) => props.marginTop || "1rem"};
   margin-bottom: ${(props) => props.marginBottom || "1.5rem"};
   margin-left: ${(props) => props.marginLeft || "4rem"};
+  text-align: ${(props) => props.textAlign};
 `;
 
 export const ContainerCards = styled.div`
@@ -36,4 +37,13 @@ export const ContainerCards = styled.div`
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
   }
+`;
+
+export const Image = styled.img`
+  display: block;
+  margin: 0 auto;
+`;
+
+export const Paragraph = styled.p`
+  text-align: center;
 `;

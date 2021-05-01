@@ -1,9 +1,11 @@
 import { useState } from "react";
+
 // import { GiHamburgerMenu } from "react-icons/gi";
 import Hamburger from "hamburger-react";
 import {
   Container, Section, Ul, Li, Button, Image,
 } from "./style";
+
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -16,8 +18,12 @@ const NavBar = () => {
       </Button>
       <Section>
         <Ul display={open ? "grid" : "none"}>
-          <Li>Home</Li>
-          <Li>Sobre</Li>
+          <Link href="/">
+            <Li>Home</Li>
+          </Link>
+          <Link href="/about_us">
+            <Li>Sobre</Li>
+          </Link>
           <Li>Marcas</Li>
           <Li>Login</Li>
         </Ul>
